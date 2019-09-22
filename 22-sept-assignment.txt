@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<stdlib h>
+Struct node
+{
+ int data;
+Struct node *next;
+};
+Struct node *add(struct node *h)
+{
+Struct node *newnode=(struct node*)malloc(sizeof(struct node*));
+Scanf("%d",&newnode->data);
+newnode->next=NULL;
+h->next=newnode;
+return newnode;
+} 
+int main()
+{
+ Struct node *temp;
+ int size;
+Struct node *headnode=(struct node *)malloc(sizeof(struct node*));
+ Printf("enter the elements");
+Scanf("%d",&headnode->data);
+ head->next=NULL;
+ size--;
+ temp=headnode;
+ While(size>0)
+{ 
+  temp=add(temp);
+  Size--;
+}
+While (temp!=headnode)
+{
+ temp--;
+}
+Printf("the nth node is :%d",temp->data);
+return 0;
+}
