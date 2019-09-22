@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.>
+int main()
+{
+ Char s[10];
+ int i,j,n,conut=1;
+ Prinrf("enter the string");
+ Gets(s);
+ n=strlen(s);
+ For(i=0;i<n;i++)
+{
+ if(s[i])
+ { 
+  For(j=i+1;j<n;j++)
+  {
+    if(s[i]==s[j])
+    { 
+     Count++;
+     s[i]='\0';
+     }
+   }
+Printf("%c=%d",s[i],count);
+}
+}
+Return 0;
+}
