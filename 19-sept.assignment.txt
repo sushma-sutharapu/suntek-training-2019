@@ -1,0 +1,34 @@
+//using interative
+#include<stdio.h>
+int main()
+{
+    int n1,n2;
+    int gcd;
+    scanf("%d %d",&n1,&n2);
+    for(int i=1;i<n1&&i<n2;i++)
+    {
+        if(n1%i==0&&n2%i==0)
+        {
+            gcd=i;
+        }
+    }
+ printf("the gcd of two numbers %d",gcd);
+ return 0;
+}
+//using recurrsion
+#include <stdio.h>
+int main()
+{
+   int n1, n2;
+   printf("enter two numbers: ");
+   scanf("%d %d", &n1, &n2);
+   printf("G.C.d is  %d",hcf(n1,n2));
+   return 0;
+}
+int hcf(int n1, int n2)
+{
+    if (n2 != 0)
+       return hcf(n2, n1%n2);
+    else 
+       return n1;
+}
