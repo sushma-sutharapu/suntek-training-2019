@@ -12,7 +12,21 @@ Scanf("%d",&newnode->data);
 newnode->next=NULL;
 h->next=newnode;
 return newnode;
-} 
+}
+void nnode(struct node *temp,int n)
+{
+    int count=0;
+    while(temp!=NULL)
+    {
+        if(count==n)
+        {
+            printf("%d",temp->data);
+        }
+        temp--;
+        count++;
+    }
+}
+
 int main()
 {
  Struct node *temp;
@@ -28,10 +42,6 @@ Scanf("%d",&headnode->data);
   temp=add(temp);
   Size--;
 }
-While (temp!=headnode)
-{
- temp--;
-}
-Printf("the nth node is :%d",temp->data);
+nnode(temp,n)
 return 0;
 }
