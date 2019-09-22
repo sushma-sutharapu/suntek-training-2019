@@ -1,0 +1,28 @@
+//consonents reverse
+#include<bits/std++.h>
+using namespace std;
+bool isconsonent(char c)
+{
+ return !(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+ }
+ string reverseconsonant(string str)
+ { 
+ string consonant;
+  for(int i=0;str[i]!='\0',i++)
+  if(isconsonant(str[i]))
+   consonant[j++]=str[i];
+  int j=0;
+  for(int i=0;str[i]!='\0',i++)
+  if(isconsonant(str[i]))
+   str[i]=consonnt(--j);
+   return str;
+   }
+   int main()
+   {
+    string str="suntex crop";
+    cout<<reverseconsonant(str);
+    return 0;
+    }
+  
+ 
+   
